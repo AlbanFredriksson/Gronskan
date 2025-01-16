@@ -1,3 +1,5 @@
+
+
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +9,13 @@ body{
   min-height: 100vh;
   background-color: #2a2a2a;
   box-sizing: border-box;
+  font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  color: white;
 }
 
 
@@ -24,7 +32,7 @@ nav ul{
 }
 
 nav li{
-  height: 50px;
+  height: 80px;
 
 }
 
@@ -38,7 +46,7 @@ nav a{
 }
 
 nav a:hover{
-  background-color: rebeccapurple;
+  background-color: rgb(37, 134, 32);
 }
 
 nav li:first-child{
@@ -51,12 +59,12 @@ nav li:first-child{
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: clamp(200px, 60%, 300px); /* Adjust width dynamically */
   z-index: 999;
   background-color: black;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -68,6 +76,7 @@ nav li:first-child{
 
 .sidebar a{
   width: 100%;
+  font-size: 1.5rem; /* Adjust for better readability */
 }
 
 .menu-button{
@@ -120,7 +129,7 @@ nav li:first-child{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%; /* Adjusts the section's width */
+  width: clamp(300px, 80%, 1000px); /* Adjust between min and max sizes */
   max-width: 1000px;
   background-color: #181818;
   padding: 5%;
@@ -139,15 +148,15 @@ nav li:first-child{
   }
 }
 
+
+
 .headline-title {
-  font-size: 32px; /* Larger font size for the headline */
   font-weight: bold;
   color: #cfcfcf;
   margin-bottom: 15px; /* Space below the headline */
 }
 
 .headline-description {
-  font-size: 18px;
   color: #d6d6d6;
   line-height: 1.6; /* Improves readability */
 }
@@ -174,16 +183,8 @@ nav li:first-child{
   margin-right: 10vw;
 }
 
-.tider img {
-  max-width: 100%;        /* Ensures the image is responsive */
-  height: auto;           /* Maintains aspect ratio */
-}
 
-.tider-text{
-  color: white;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
+
 
 
 @media (max-width: 800px){
@@ -201,12 +202,17 @@ nav li:first-child{
 
 .lineup-text{
   padding-top: 50px;
-  font-size: 32px;
   color: white;
 }
 
 .lineup-foto{
   width: 600px;
+}
+
+
+.header-logo{
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -264,3 +270,38 @@ nav li:first-child{
 }
 
 
+
+
+.contact-us{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.contact-foto{
+  object-fit: cover;
+  min-width: 1em;
+  max-width: 8em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.contact-text{
+  display: block;
+  color: white;
+}
+
+.contact-text h1 {
+font-size: 1.5em;
+}
+
+.contact-text p {
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
