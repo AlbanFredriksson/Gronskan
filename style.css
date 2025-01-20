@@ -8,18 +8,21 @@ body{
   background-color: #2a2a2a;
   box-sizing: border-box;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 h1 {
   font-size: clamp(1rem, 5vw, 2.5rem);
   color: white;
+  
 }
 
 
 nav{
   background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #000, #333);
 }
 nav ul{
   width: 100%;
@@ -41,6 +44,7 @@ nav a{
   display: flex;
   align-items: center;
   color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover{
@@ -66,7 +70,10 @@ nav li:first-child{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+
 }
+
+
 
 .sidebar li{
   width: 100%;
@@ -88,8 +95,15 @@ nav li:first-child{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  background: url('755a203d-6cdf-452e-ae52-2235430ae2d4\ 1.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 
 }
+
+
 
 .center-image {
   width: 26%; /* 40% of viewport width on larger screens */
@@ -169,6 +183,8 @@ nav li:first-child{
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
 }
+
+
 
 
 
