@@ -18,7 +18,7 @@ body{
 }
 
 h1 {
-  font-size: clamp(1rem, 8vw, 3.5rem);
+  font-size: clamp(1rem, 6vw, 3.5rem);
   color: white;
   font-family: myFont; 
   letter-spacing: .2rem; 
@@ -27,7 +27,7 @@ h1 {
 h2{
   font-family: myFont;
   letter-spacing: .1rem;
-  font-size: clamp(1rem, 8vw, 2.5rem);
+  font-size: clamp(1rem, 7vw, 2.5rem);
 }
 
 
@@ -136,7 +136,7 @@ nav li:first-child{
 
 
 @media (max-width: 800px){
-  .headline-content {
+  .headline-content{
     flex-direction: column; /* Stack text and image vertically */
     text-align: center; /* Center-align content for smaller screens */
   }
@@ -147,16 +147,78 @@ nav li:first-child{
   justify-content: center;
   align-items: center;
   background-color: #2a2a2a;
-  padding: 50px 20px; /* Adds padding around the section */
+  padding: 20px 20px; /* Adds padding around the section */
   margin: 0px 0; /* Adds space above and below the section */
 }
+
+
+.swish-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 20px 20px;
+}
+
+@media(min-width: 1500px){
+  .swish-section{
+    display: none;
+  }
+}
+
+.swish-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(300px, 30%, 1000px); /* Adjust between min and max sizes */
+  background-color: #181818;
+  padding: 3%;
+  border-radius: 30px;
+  flex-direction: column; /* Stack text and image vertically */
+  text-align: center; /* Center-align content for smaller screens */
+}
+
+.swish-title {
+  font-weight: bold;
+  color: #cfcfcf;
+  margin-bottom: 3%; /* Space below the headline */
+  padding-right: 2%;
+  padding-left: 2%;
+  line-height: 1.1; /* Improves readability */
+}
+
+@media(max-width: 800px){
+  .swish-title{
+    margin-top: 5%;
+  }
+}
+
+.swish-text {
+  color: #d6d6d6;
+  line-height: 1.6; /* Improves readability */
+  margin-bottom: 3%;
+}
+
+.swish-bildcontent{
+    flex: 0 1 40%; /* Fixes image container to 40% of the width */
+}
+
+.swish-bild{
+  width: 60%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the image */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
+  margin-bottom: 5%;
+}
+
+
 
 .headline-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: clamp(300px, 80%, 1000px); /* Adjust between min and max sizes */
-  max-width: 1000px;
+  max-width: ;
   background-color: #181818;
   padding: 5%;
   border-radius: 30px;
@@ -168,11 +230,13 @@ nav li:first-child{
 }
 
 @media (max-width: 800px){
-  .text-content {
-    padding-right: 0;
+  .text-content, .swish-content{
     margin-top: 20px;
+    padding-right: 2%; /* Adds space between text and image */
+    margin-bottom: 5%;
   }
 }
+
 
 
 
@@ -209,6 +273,8 @@ nav li:first-child{
   text-align: center;
   margin-left: 10vw;
   margin-right: 10vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 
@@ -216,13 +282,12 @@ nav li:first-child{
 
 
 @media (max-width: 800px){
-  .headline-image {
-    margin-top: 50px;
+  .headline-image, .swish-bild {
+    margin-top: 3%;
   }
 }
 
 .lineup{
-
   background-color: #2a2a2a;
   display: block;
   text-align: center;
@@ -290,7 +355,7 @@ nav li:first-child{
 
 @media(max-width: 400px){
   .sidebar{
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -333,3 +398,34 @@ font-size: 1.5em;
   margin-top: 1em;
 }
 
+.sticky-container {
+  position: fixed;
+  bottom: 10px; /* Distance from the bottom of the viewport */
+  right: 10px; /* Distance from the right of the viewport */
+  text-align: center; /* Center text horizontally */
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  background-color: #181818;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.sticky-image {
+  width: 80px; /* Adjust the size of the image */
+  height: 80px;
+  cursor: pointer;
+}
+
+.sticky-text {
+  font-size: 14px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between text and image */
+}
+
+@media (max-width: 1500px) {
+  .sticky-container {
+      display: none;
+  }
+}
