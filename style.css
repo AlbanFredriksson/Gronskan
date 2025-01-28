@@ -37,7 +37,6 @@ h2{
 nav{
   background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(90deg, #000, #333);
 }
 nav ul{
   width: 100%;
