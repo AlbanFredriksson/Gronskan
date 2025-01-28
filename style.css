@@ -20,7 +20,7 @@ body{
 
 h1 {
   font-size: clamp(1rem, 6vw, 3.5rem);
-  color: white;
+  color: rgb(245, 245, 245);
   font-family: myFont; 
   letter-spacing: .2rem; 
 }
@@ -41,7 +41,6 @@ p {
 nav{
   background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(90deg, #000, #333);
 }
 nav ul{
   width: 100%;
@@ -62,7 +61,7 @@ nav a{
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: white;
+  color: rgb(245, 245, 245);
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -116,7 +115,7 @@ nav li:first-child{
   justify-content: center;
   position: relative;
   background: url('755a203d-6cdf-452e-ae52-2235430ae2d4\ 1.png') no-repeat center center/cover;
-  color: white;
+  color: rgb(245, 245, 245);
   text-align: center;
   padding: 50px 20px;
 
@@ -163,7 +162,7 @@ nav li:first-child{
   bottom: 10px; /* Distance from the bottom */
   left: 10px; /* Distance from the left */
   font-size: 14px; /* Adjust font size */
-  color: #d6d6d6; /* Text color */
+  color: rgb(245, 245, 245); /* Text color */
   font-weight: bold; /* Optional: Make it bold */
 }
 
@@ -196,7 +195,7 @@ nav li:first-child{
 
 .swish-title, .riktlinjer-title {
   font-weight: bold;
-  color: #cfcfcf;
+  color: rgb(245, 245, 245);
   margin-bottom: 3%; /* Space below the headline */
   padding-right: 2%;
   padding-left: 2%;
@@ -205,7 +204,7 @@ nav li:first-child{
 
 .riktlinjer-title {
   font-weight: bold;
-  color: #cfcfcf;
+  color: rgb(245, 245, 245);
   margin-bottom: 3%; /* Space below the headline */
   padding-right: 2%;
   padding-left: 2%;
@@ -220,7 +219,7 @@ nav li:first-child{
 }
 
 .swish-text, .riktlinjer-text {
-  color: #d6d6d6;
+  color: rgb(245, 245, 245);
   line-height: 1.6; /* Improves readability */
   margin-bottom: 3%;
 }
@@ -255,7 +254,7 @@ nav li:first-child{
 .text-content {
   flex: 1; /* Takes up available space */
   padding-right: 30px; /* Adds space between text and image */
-  color: white;
+  color: rgb(245, 245, 245);
   font-weight: 200;
   line-height: 1,6;
 }
@@ -273,12 +272,12 @@ nav li:first-child{
 
 .headline-title {
   font-weight: bold;
-  color: #efefef;
+  color: rgb(245, 245, 245);
   margin-bottom: 15px; /* Space below the headline */
 }
 
 .headline-description {
-  color: rgb(214, 214, 214);
+  color: rgb(245, 245, 245);
   text-align: center;
 } 
 
@@ -331,7 +330,7 @@ nav li:first-child{
 
 .lineup-text{
   padding-top: 50px;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 .lineup-foto{
@@ -457,7 +456,7 @@ nav li:first-child{
 
 .contact-text{
   display: block;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 .contact-text h1 {
@@ -490,7 +489,7 @@ font-size: 1.5em;
 
 .sticky-text {
   font-size: 14px;
-  color: white;
+  color: rgb(245, 245, 245);
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 10px; /* Space between text and image */
@@ -527,7 +526,7 @@ font-size: 1.5em;
 .gallery-headline{
   text-align: center;
   margin-top: 5%;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 @media (min-width: 1065px) {
