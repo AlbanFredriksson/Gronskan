@@ -15,6 +15,7 @@ body{
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   
+  
 }
 
 h1 {
@@ -149,10 +150,21 @@ nav li:first-child{
   background-color: #2a2a2a;
   padding: 20px 20px; /* Adds padding around the section */
   margin: 0px 0; /* Adds space above and below the section */
+  position: relative; /* Enables positioning for child elements */
+
+}
+
+.bottom-left-text {
+  position: absolute;
+  bottom: 10px; /* Distance from the bottom */
+  left: 10px; /* Distance from the left */
+  font-size: 14px; /* Adjust font size */
+  color: #d6d6d6; /* Text color */
+  font-weight: bold; /* Optional: Make it bold */
 }
 
 
-.swish-section{
+.swish-section, .riktlinjer-section{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +178,7 @@ nav li:first-child{
   }
 }
 
-.swish-content{
+.swish-content, .riktlinjer-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,7 +190,7 @@ nav li:first-child{
   text-align: center; /* Center-align content for smaller screens */
 }
 
-.swish-title {
+.swish-title, .riktlinjer-title {
   font-weight: bold;
   color: #cfcfcf;
   margin-bottom: 3%; /* Space below the headline */
@@ -187,13 +199,23 @@ nav li:first-child{
   line-height: 1.1; /* Improves readability */
 }
 
+.riktlinjer-title {
+  font-weight: bold;
+  color: #cfcfcf;
+  margin-bottom: 3%; /* Space below the headline */
+  padding-right: 2%;
+  padding-left: 2%;
+  line-height: 1.1; /* Improves readability */
+  margin-top: 1%
+}
+
 @media(max-width: 800px){
   .swish-title{
     margin-top: 5%;
   }
 }
 
-.swish-text {
+.swish-text, .riktlinjer-text {
   color: #d6d6d6;
   line-height: 1.6; /* Improves readability */
   margin-bottom: 3%;
@@ -219,13 +241,18 @@ nav li:first-child{
   align-items: center;
   width: clamp(300px, 80%, 1000px); /* Adjust between min and max sizes */
   background-color: #181818;
-  padding: 5%;
+  padding: 3%;
   border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
 }
+
 
 .text-content {
   flex: 1; /* Takes up available space */
   padding-right: 30px; /* Adds space between text and image */
+  color: white;
+  font-weight: 200;
 }
 
 @media (max-width: 800px){
@@ -241,14 +268,15 @@ nav li:first-child{
 
 .headline-title {
   font-weight: bold;
-  color: #cfcfcf;
+  color: #efefef;
   margin-bottom: 15px; /* Space below the headline */
 }
 
 .headline-description {
   color: #d6d6d6;
-  line-height: 1.6; /* Improves readability */
-}
+  line-height: 1.1; /* Improves readability */
+  text-align: center;
+} 
 
 .image-content {
   flex: 0 0 40%; /* Fixes image container to 40% of the width */
@@ -261,6 +289,12 @@ nav li:first-child{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
 }
 
+
+.headline-tid{
+  font-weight: bold;
+  margin-top: 1%;
+  
+}
 
 
 
@@ -365,21 +399,57 @@ nav li:first-child{
 
 
 .contact-us{
-  align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #181818;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 2em;
+  gap: 2em; /* Space between image section and text section */
+}
+
+@media (max-width: 1065px){
+  .contact-us{
+    justify-content: center;
+  }
+}
+
+.images-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 2em; /* Space between images */
+  max-width: 400px; /* Adjust for your design needs */
+  margin-right: 5%;
+}
+
+@media (max-width: 1065px){
+  .images-section{
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .sticky-container {
+      display: none;
+  }
+}
+
+.contact-image {
+  width: 100%; /* Ensures images are responsive */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners for the images */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
 }
 
 .contact-foto{
-  object-fit: cover;
+  object-fit: fit;
   min-width: 1em;
-  max-width: 8em;
+  max-width: 10em;
   margin-right: 2em;
+}
+
+@media (max-width: 505px) {
+  .contact-foto {
+      display: none;
+  }
 }
 
 .contact-text{
@@ -425,6 +495,40 @@ font-size: 1.5em;
 
 @media (max-width: 1500px) {
   .sticky-container {
+      display: none;
+  }
+}
+
+
+
+
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 3 images per row */
+  justify-content: center; /* Center the grid on the screen */
+  align-items: center; /* Center the content vertically (if needed) */
+  place-items: center;
+  padding: 2em;
+}
+
+.gallery-image {
+  width: auto; /* Adjust size of images */
+  height: 10vw; /* Maintain uniform size */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  justify-content: center;
+  padding-top: 10vw;
+
+}
+
+.gallery-headline{
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+@media (min-width: 1065px) {
+  .image-gallery, .gallery-headline {
       display: none;
   }
 }
