@@ -32,11 +32,16 @@ h2{
 }
 
 
+p {
+  line-height: 1.6;
+}
+
 
 
 nav{
   background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #000, #333);
 }
 nav ul{
   width: 100%;
@@ -252,6 +257,7 @@ nav li:first-child{
   padding-right: 30px; /* Adds space between text and image */
   color: white;
   font-weight: 200;
+  line-height: 1,6;
 }
 
 @media (max-width: 800px){
@@ -272,8 +278,7 @@ nav li:first-child{
 }
 
 .headline-description {
-  color: #d6d6d6;
-  line-height: 1.1; /* Improves readability */
+  color: rgb(214, 214, 214);
   text-align: center;
 } 
 
@@ -291,8 +296,7 @@ nav li:first-child{
 
 .headline-tid{
   font-weight: bold;
-  margin-top: 1%;
-  
+  margin-top: 1%;  
 }
 
 
@@ -523,7 +527,7 @@ font-size: 1.5em;
 .gallery-headline{
   text-align: center;
   margin-top: 5%;
-
+  color: white;
 }
 
 @media (min-width: 1065px) {
@@ -531,3 +535,4 @@ font-size: 1.5em;
       display: none;
   }
 }
+
