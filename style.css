@@ -114,7 +114,7 @@ nav li:first-child{
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url('755a203d-6cdf-452e-ae52-2235430ae2d4\ 1.png') no-repeat center center/cover;
+  background: url('download.png') no-repeat center center/cover;
   color: rgb(245, 245, 245);
   text-align: center;
   padding: 50px 20px;
@@ -312,13 +312,20 @@ nav li:first-child{
   margin-bottom: 2%;
 }
 
-
-
+.poster{
+  width: 60%;
+}
 
 
 @media (max-width: 800px){
-  .headline-image, .swish-bild{
+  .headline-image, .swish-bild, .poster{
     margin-top: 3%;
+  }
+}
+
+@media (max-width:800px) {
+  .poster{
+    width: 80%;
   }
 }
 
@@ -534,4 +541,3 @@ font-size: 1.5em;
       display: none;
   }
 }
-
