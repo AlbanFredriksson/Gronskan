@@ -316,6 +316,10 @@ nav li:first-child{
   width: 60%;
 }
 
+.forfest{
+  width: 80%;
+}
+
 
 @media (max-width: 800px){
   .headline-image, .swish-bild, .poster{
@@ -326,6 +330,12 @@ nav li:first-child{
 @media (max-width:800px) {
   .poster{
     width: 80%;
+  }
+}
+
+@media (max-width:800px) {
+  .forfest{
+    width: 100%;
   }
 }
 
@@ -541,3 +551,6 @@ font-size: 1.5em;
       display: none;
   }
 }
+
+
+
