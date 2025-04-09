@@ -459,7 +459,7 @@ nav li:first-child{
 }
 
 .contact-foto{
-  object-fit: fit;
+  object-fit: contain;
   min-width: 1em;
   max-width: 10em;
   margin-right: 2em;
@@ -524,7 +524,7 @@ font-size: 1.5em;
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 2fr); /* 3 images per row */
+  grid-template-columns: repeat(2, 3fr); /* 3 images per row */
   justify-content: center; /* Center the grid on the screen */
   align-items: center; /* Center the content vertically (if needed) */
   place-items: center;
@@ -551,6 +551,5 @@ font-size: 1.5em;
       display: none;
   }
 }
-
 
 
