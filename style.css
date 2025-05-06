@@ -528,15 +528,16 @@ font-size: 1.5em;
   justify-content: center; /* Center the grid on the screen */
   align-items: center; /* Center the content vertically (if needed) */
   place-items: center;
-  padding: 2em;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .gallery-image {
-  width: auto; /* Adjust size of images */
-  height: 10vw; /* Maintain uniform size */
+  width: 20vw; /* Adjust size of images */
+  height: auto; /* Maintain uniform size */
   object-fit: cover; /* Ensure images maintain aspect ratio */
   justify-content: center;
-  padding-top: 10vw;
+  padding-top: 5vw;
 
 }
 
